@@ -21,7 +21,8 @@ jobs:
           node-version: "14.x"
       - name: Run test
         run: npm test
-      - uses: ArtiomTr/jest-coverage-report-action@v2
+      - name: Verify test coverage
+        uses: ArtiomTr/jest-coverage-report-action@v2
 
   deploy:
     runs-on: ubuntu-latest
