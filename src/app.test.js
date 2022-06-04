@@ -6,7 +6,7 @@ describe("/ endpoint", () => {
   it("should return 200", async () => {
     const response = await request.get("/");
     expect(response.status).toBe(200);
-    expect(response.text).toBe("Invalid message!");
+    expect(response.text).toBe("Hello GH actions!");
   });
 });
 
