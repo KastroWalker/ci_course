@@ -11,10 +11,10 @@ describe("/ endpoint", () => {
 });
 
 describe("/students endpoint", () => {
-  it("should return 4 students", async () => {
+  it("should return 5 students", async () => {
     const response = await request.get("/students");
     expect(response.status).toBe(200);
-    expect(response.body.length).toBe(4);
+    expect(response.body.length).toBe(5);
   });
 });
 
