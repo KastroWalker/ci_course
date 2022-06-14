@@ -6,7 +6,7 @@ const students = require("./database");
 app.use(cors());
 
 app.get("/", (_req, res) => {
-  res.status(200).send("Hello GH actions!");
+  res.status(200).send("batatinha");
 });
 
 app.get("/students", (_req, res) => {
