@@ -17,11 +17,3 @@ describe("/students endpoint", () => {
     expect(response.body.length).toBe(6);
   });
 });
-
-describe("/test endpoint", () => {
-  it("should return a response", async () => {
-    const response = await request.get("/test");
-    expect(response.status).toBe(200);
-    expect(response.text).toBe("Hello world");
-  });
-});
