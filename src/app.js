@@ -13,4 +13,8 @@ app.get("/students", (_req, res) => {
   res.status(200).send(students);
 });
 
+app.get("/bla", (_req, req) => {
+  res.status(404).send("Page not found")
+})
+
 module.exports = app;
